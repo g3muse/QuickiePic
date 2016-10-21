@@ -1,0 +1,13 @@
+html {
+    background-color: #686868;
+}
+canvas{
+    background-color: white;
+    cursor: crosshair;
+}
+button{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
