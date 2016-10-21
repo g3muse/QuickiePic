@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quickiepic</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <button id="paintbrush" width="64" height="64" onclick="selectColor()">
+        <img src="img/brushIcon.png"/>
+    </button>
+
+    <button id="eraser" width="64" height="64" value="#FFFFFF" onclick="erase()">
+        <img src="img/eraserIcon.png"/>
+    </button>
+
+    <br>
+    <input id="brushWidth" type="range" min="1" max="50" step="1" value="1" oninput="brushWidth()" onclick="brushWidth()"/>
+
+    <input type="color" id="colorPicker" oninput="selectColor()" onclick="selectColor()" value="#FF0000"/>
+    <br>
+
+    <canvas id="myCanvas" width="800" height="500" style="border:1px solid #000000;" onclick="color(this)"></canvas>
+
+    <script src="app.js"></script>
+    <script>
+        init();
+    </script>
+
+    <br>
+    <input type="button" id="colorSlot1" value="  " onclick="addToPallette('colorSlot1')" />
+    <input type="button" id="colorSlot2" value="  " onclick="addToPallette('colorSlot2')" />
+    <input type="button" id="colorSlot3" value="  " onclick="addToPallette('colorSlot3')" />
+    <input type="button" id="colorSlot4" value="  " onclick="addToPallette('colorSlot4')" />
+    <input type="button" id="colorSlot5" value="  " onclick="addToPallette('colorSlot5')" />
+    <input type="button" id="colorSlot6" value="  " onclick="addToPallette('colorSlot6')" />
+    <input type="button" id="colorSlot7" value="  " onclick="addToPallette('colorSlot7')" />
+    <input type="button" id="colorSlot8" value="  " onclick="addToPallette('colorSlot8')" />
+    <input type="button" id="colorSlot9" value="  " onclick="addToPallette('colorSlot9')" />
+    <input type="button" id="colorSlot10" value="  " onclick="addToPallette('colorSlot10')" />
+    <button id="colorSave" onclick="colorSave()">Toggle Color Save</button>
+    <br>
+    <input type="button" id="colorSlot11" value="  " onclick="addToPallette('colorSlot11')" />
+    <input type="button" id="colorSlot12" value="  " onclick="addToPallette('colorSlot12')" />
+    <input type="button" id="colorSlot13" value="  " onclick="addToPallette('colorSlot13')" />
+    <input type="button" id="colorSlot14" value="  " onclick="addToPallette('colorSlot14')" />
+    <input type="button" id="colorSlot15" value="  " onclick="addToPallette('colorSlot15')" />
+    <input type="button" id="colorSlot16" value="  " onclick="addToPallette('colorSlot16')" />
+    <input type="button" id="colorSlot17" value="  " onclick="addToPallette('colorSlot17')" />
+    <input type="button" id="colorSlot18" value="  " onclick="addToPallette('colorSlot18')" />
+    <input type="button" id="colorSlot19" value="  " onclick="addToPallette('colorSlot19')" />
+    <input type="button" id="colorSlot20" value="  " onclick="addToPallette('colorSlot20')" />
+</body>
+</html>
