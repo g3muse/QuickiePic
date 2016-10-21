@@ -1,2 +1,2 @@
 # QuickiePic
-Painting application
+Painting application in progress
